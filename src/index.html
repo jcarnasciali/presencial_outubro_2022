@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./css/output.css" class="css">
+    <!-- CSS Adicional -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!-- Parallax Scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS - Animate Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Javascript -->
+    <script src="./js/script.js"></script>
+
+    <title>Capacitação Presencial | Grupo JML</title>
+</head>
+<body>
+
+    <!-- Âncora para retornar ao topo da tela -->
+    <a href="#inicio">
+        <div class="pageAnchor w-12 h-12 border-slate-400 border fixed bottom-4 xl:bottom-6 right-4 xl:right-6 flex items-center justify-center z-[999] group duration-300 hover:border-white hover:bg-jml-blue">
+            <svg class="scale-75" xmlns="http://www.w3.org/2000/svg" width="34.61" height="18.719" viewBox="0 0 34.61 18.719">
+                <path class="duration-300 group-hover:stroke-white" id="Caminho_1" data-name="Caminho 1" d="M39.142,500l-16.6,16.6,16.6,16.6" transform="translate(533.903 -21.13) rotate(90)" fill="none" stroke="#94a3b8" stroke-width="2"/>
+            </svg>                       
+        </div>
+    </a>
+
+    <a id="inicio"></a>
+
+    <!-- Botão Mobile -->
+    <div class="w-full px-5 absolute md:hidden top-4 flex justify-between items-center z-50">
+        <a href="#" class="group"><img src="./img/logo_capacitacao_presencial.svg" alt="Capacitação Presencial - Grupo JML" class="w-36 xs:w-44 duration-300 group-hover:opacity-80"></a>
+        <a href="#" class="mobile-menu"><i class="fa-solid fa-bars text-white text-xl"></i></a>
+    </div>
+    <!-- Menu Principal -->
+        <nav class="main-menu w-full pt-20 xs:pt-24 md:pt-0 pb-4 md:pb-0 md:py-0 px-4 lg:px-6 xl:px-10 xxl:px-16 hidden md:block md:absolute top-6 xl:top-[38px] bg-slate-900 md:bg-[#5656569E] z-50">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <a href="#" class="group"><img src="./img/logo_capacitacao_presencial.svg" alt="Capacitação Presencial - Grupo JML" class="hidden md:block w-36 lg:w-44 xl:w-48 xxl:w-auto mr-5 lg:mr-7 xl:mr-10 xxl:mr-16 duration-300 group-hover:opacity-80"></a>
+                    <ul class="mb-4 md:mb-0 w-28 md:w-auto h-full flex flex-col md:flex-row list-none font-medium text-11px lg:text-xs xl:text-13px xxl:text-sm tracking-wider text-jml-menu">
+                        <a href="#programacao"><li class="mb-2 md:mb-0 mr-2 lg:mr-3 xl:mr-4 xxl:mr-6 pb-2 md:pb-0 px-1 md:h-16 lg:h-20 xl:h-[101px] flex items-center duration-300 border-b md:border-b-[5px] border-transparent hover:border-jml-blue hover:text-white"><span class="mt-[5px]">PROGRAMAÇÃO</span></li></a>
+                        <a href="#destaques"><li class="mb-2 md:mb-0 mr-2 lg:mr-3 xl:mr-4 xxl:mr-6 pb-2 md:pb-0 px-1 md:h-16 lg:h-20 xl:h-[101px] flex items-center duration-300 border-b md:border-b-[5px] border-transparent hover:border-jml-blue hover:text-white"><span class="mt-[5px]">DESTAQUES</span></li></a>
+                        <a href="#palestrantes"><li class="mb-2 md:mb-0 mr-2 lg:mr-3 xl:mr-4 xxl:mr-6 pb-2 md:pb-0 px-1 md:h-16 lg:h-20 xl:h-[101px] flex items-center duration-300 border-b md:border-b-[5px] border-transparent hover:border-jml-blue hover:text-white"><span class="mt-[5px]">PALESTRANTES</span></li></a>
+                        <a href="#investimento"><li class="mb-2 md:mb-0 mr-2 lg:mr-3 xl:mr-4 xxl:mr-6 pb-2 md:pb-0 px-1 md:h-16 lg:h-20 xl:h-[101px] flex items-center duration-300 border-b md:border-b-[5px] border-transparent hover:border-jml-blue hover:text-white"><span class="mt-[5px]">INVESTIMENTO</span></li></a>
+                        <a href="#local"><li class="mb-2 md:mb-0 mr-2 lg:mr-3 xl:mr-4 xxl:mr-6 pb-2 md:pb-0 px-1 md:h-16 lg:h-20 xl:h-[101px] flex items-center duration-300 border-b md:border-b-[5px] border-transparent hover:border-jml-blue hover:text-white"><span class="mt-[5px]">LOCAL</span></li></a>
+                    </ul>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <a href="./materiais/Nova Lei _Boas praticas_Curso_Presencial.pdf" class="mb-4 md:mb-0 md:mr-3 lg:mr-5 xl:mr-7 xxl:mr-9 group" target="_blank">
+                        <img src="./img/pdf_azul_claro.svg" alt="PDF" class="lg:mr-1 xl:mr-3 inline-block align-middle duration-300 group-hover:rotate-6 scale-75 lg:scale-90 xl:scale-100">
+                        <p class="inline-block align-middle text-jml-menu text-11px lg:text-xs xl:text-sm xxl:text-15px leading-5 font-bold duration-300 group-hover:text-white">DOWNLOAD PDF</p>
+                    </a>
+                    <a href="#">
+                        <button class="mb-4 md:mb-0 px-3 lg:px-0 md:mr-3 xl:mr-4 xxl:mr-6 lg:w-44 xl:w-52 xxl:w-60 h-10 xl:h-12 xxl:h-[61px] rounded-lg font-bold text-11px lg:text-xs xl:text-sm xl:text-15px xxl:text-base tracking-wider text-white bg-jml-blue duration-300 hover:bg-jml-text-blue">INSCREVA-SE AQUI</button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=554196226851" target="_blank">
+                        <svg class="scale-75 xl:scale-90 xxl:scale-100" xmlns="http://www.w3.org/2000/svg" width="37.467" height="37.466" viewBox="0 0 37.467 37.466" class="group duration-300 hover:rotate-6">
+                            <path class="duration-300 group-hover:fill-[#25D366]" id="Caminho_96" data-name="Caminho 96" d="M783.192,297.613a19.223,19.223,0,0,0-4.1-6.029,18.478,18.478,0,0,0-13.172-5.444,18.02,18.02,0,0,0-9.309,2.517,18.888,18.888,0,0,0-6.791,6.791A18.184,18.184,0,0,0,749.881,314l-2.693,9.6,9.835-2.575a18.79,18.79,0,0,0,18.265-.293A18.876,18.876,0,0,0,782.137,314a18.209,18.209,0,0,0,1.055-16.392Zm-7.845,12.352a5.994,5.994,0,0,1-.292,1.347,3.339,3.339,0,0,1-1.4,1.463,5.273,5.273,0,0,1-1.756.761,5.925,5.925,0,0,1-2.342,0,17.062,17.062,0,0,1-3.279-1.17,19.02,19.02,0,0,1-7.844-6.909v-.117a7.59,7.59,0,0,1-1.99-4.683,5.288,5.288,0,0,1,1.638-3.864v-.117a1.79,1.79,0,0,1,1.288-.585h.937a.949.949,0,0,1,.937.819l1.523,3.4a.774.774,0,0,1,0,.82,4.874,4.874,0,0,1-1.055,1.522,1.743,1.743,0,0,0-.41.527.889.889,0,0,0,.059.527,13.832,13.832,0,0,0,2.81,3.4,20.578,20.578,0,0,0,3.512,2.108q.7.351,1.055-.118a13.345,13.345,0,0,0,1.4-1.756.748.748,0,0,1,.995-.35,35.129,35.129,0,0,1,3.22,1.638l.235.117a1.689,1.689,0,0,1,.7.41A1.532,1.532,0,0,1,775.347,309.965Z" transform="translate(-747.188 -286.139)" fill="#fff"/>
+                        </svg>                  
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Conteudo Principal -->
+    <main>
+
+        <!-- Topo - Nova Lei de Licitações -->
+        <div id="inicio" class="sm:h-[670px] lg:h-[720px] xl:h-[900px] xxl:h-[1080px] -mb-10 lg:-mb-[80px] xxl:-mb-[220px] flex flex-col sm:block items-start relative bg-topo bg-cover z-10">
+            <div class="tit-topo ml-7 mt-20 xs:mt-24 sm:mt-0 sm:ml-0 sm:absolute z-10" data-aos="fade-up" data-aos-duration="1150">
+                <h1 class="mb-2 xs:mb-3 font-black text-2xl xs:text-3xl md:text-4xl xl:text-6xl xxl:text-[67px] leading-7 xs:leading-9 md:leading-10 xl:leading-[65px] xxl:leading-[72px] text-white"><span class="text-jml-text-blue">NOVA LEI</span> <br> DE LICITAÇÕES</h1>
+                <p class="mb-4 md:mb-5 px-2 xs:px-3 md:px-5 py-1 rounded-full inline-block text-white font-bold tracking-wider xs:tracking-widest text-13px xs:text-sm md:text-base xl:text-xl xxl:text-22px bg-jml-text-blue">(LEI 14.133/2021):</p>
+                <p class="mb-3 xxl:mb-6 text-base xs:text-xl xl:text-2xl xxl:text-28px leading-6 xs:leading-7 xl:leading-9 xxl:leading-10 font-extrabold text-white">BOAS PRÁTICAS <span class="font-light">PARA</span><br> IMPLANTAÇÃO <span class="font-light">E</span><br> REGULAMENTAÇÃO</p>
+                <div class="mb-1 md:mb-2 xxl:mb-1">
+                    <img src="./img/data_azul.svg" alt="Data" class="mr-0 md:mr-2 xxl:mr-3 inline-block align-middle scale-90 md:scale-100">
+                    <p class="inline-block align-middle text-jml-text-blue text-lg xs:text-xl md:text-2xl xl:text-4xl xxl:text-39px font-black">13 e 14 <span class="text-sm xs:text-base md:text-lg xl:text-xl xxl:text-2xl"> <span class="font-normal text-white">de</span> <span class="font-bold">setembro</span>  <span class="font-normal text-white">| 22</span></span></p>
+                </div>
+                <div>
+                    <img src="./img/local_azul.svg" alt="Local" class="xs:ml-1 md:mr-2 xl:mr-3 inline-block align-middle scale-90 md:scale-100">
+                    <p class="inline-block align-middle text-white text-sm xs:text-base md:text-lg xl:text-xl xxl:text-22px font-bold">Curitiba, PR</p>
+                </div>
+            </div>
+            <img src="./img/img_topo.png" alt="Licitação" class="img-topo ml-20 sm:ml-0 mr-3 sm:mr-0 sm:absolute z-0">
+        </div>
+
+        <!-- Experiência Presencial Continuada -->
+        <div class="pt-[17rem] lg:pt-80 xl:pt-96 xxl:pt-[464px] rounded-tl-[40px] lg:rounded-tl-[80px] xxl:rounded-tl-[128px] rounded-tr-[40px] lg:rounded-tr-[80px] xxl:rounded-tr-[128px] relative flex flex-col lg:items-center bg-experiencia bg-bottom bg-cover z-40">
+            <div class="absolute-center-x absolute -top-[102px] sm:-top-[113px] lg:-top-[124px] xxl:-top-[154px]"><img src="./img/brasao_grupo_jml.png" alt="Grupo JML" class="rotativo w-52 sm:w-56 lg:w-64 xxl:w-auto"></div>
+            <div class="experiencia-titulo w-96 md:w-auto absolute right-0 flex flex-row flex-wrap md:flex-nowrap justify-end sm:items-center z-0" data-aos="fade-up" data-aos-duration="1150">
+                <h2 class="mr-[151px] xs:mr-[185px] md:mr-3 text-white text-[27px] xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[84px] font-light leading-relaxed xs:leading-relaxed sm:leading-relaxed md:leading-none">Experiência <br class="md:hidden"> <span class="font-black">presencial</span></h2>
+                <img src="./img/continuada.png" alt="continuada" class="continuada max-w-none w-[300px] xs:w-[351px] sm:w-[383px] lg:w-[480px] xl:w-[550px] xxl:w-auto pt-3 lg:pt-4 xl:pt-6 xxl:pt-9 relative">
+            </div>
+           <a href="#video_divulgacao" class="text-center"><button id="image_id" class="mx-3 sm:mx-0 mt-10 xs:mt-12 sm:mt-14 md:mt-0 mb-12 xs:mb-14 lg:mb-20 xl:mb-28 px-7 md:px-11 xl:px-16 xxl:px-[73px] py-3 md:py-4 xl:py-5 xxl:py-6 border-2 sm:border-[3px] border-white rounded-full relative z-10 tracking-widest text-white font-medium text-11px sm:text-xs md:text-13px lg:text-base xl:text-xl xxl:text-22px duration-300 hover:bg-white hover:text-jml-gray" data-aos="fade-up" data-aos-duration="1150">CONHEÇA O NOVO CONCEITO DE CAPACITAÇÃO JML</button></a>
+            <div class="mx-auto lg:mx-0 mb-10 xs:mb-14 sm:mb-16 xl:mb-20 w-full xs:w-[500px] lg:w-[700px] xl:w-[1000px] xxl:w-[1100px] px-5" data-aos="fade-up" data-aos-duration="1150">
+                <div id="video_divulgacao" class="w-full h-0 pb-[56.25%] rounded-3xl relative overflow-hidden">
+                    <iframe class="frameVideo w-full h-full absolute top-0 left-0 bottom-0" src="https://www.youtube.com/embed/GposxDnPDww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="px-4 font-extrabold text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] text-[#919191]" data-aos="fade-up" data-aos-duration="1150"><span class="font-extralight">#</span><span class="text-jml-blue">conhecimento</span>. <span class="font-extralight">#</span><span class="text-jml-blue">conexão</span>. <span class="font-extralight">#</span><span class="text-jml-blue">transformação</span>.</p>
+        </div>
+
+        <!-- Nova Lei de Licitações -->
+        <div class="pt-24 xs:pt-28 sm:pt-40 md:pt-52 xl:pt-72 xxl:pt-[338px] relative bg-jml-blue z-30">
+            <img src="./img/transicao_cinza.png" alt="Transição" class="absolute -top-px left-0 right-0">
+            <div class="px-7 lg:px-3 xxl:px-0 mb-12 xxl:mb-14 mx-auto max-w-[1170px] xl:max-w-[1410px] flex flex-col lg:flex-row lg:items-center justify-between">
+                <div class="mb-6 lg:mb-0" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="mb-1 text-jml-gray font-black text-2xl xs:text-3xl md:text-4xl xl:text-6xl xxl:text-[67px] leading-7 xs:leading-9 md:leading-10 xl:leading-[65px] xxl:leading-[72px]">NOVA LEI<br> <span class="text-white">DE LICITAÇÕES</span></h2>
+                    <p class="mb-3 md:mb-0 mr-3 px-2 xs:px-3 md:px-5 py-1 rounded-full inline-block align-top text-white font-bold text-13px xs:text-sm md:text-base xl:text-xl xxl:text-22px leading-6 tracking-wider xs:tracking-widest bg-jml-gray">(LEI 14.133/2021):</p>
+                    <p class="md:inline-block align-top font-extrabold leading-8 text-base xs:text-lg xl:text-22px text-white">BOAS PRÁTICAS <span class="font-light">PARA</span><br> IMPLANTAÇÃO <span class="font-light">E</span><br> REGULAMENTAÇÃO</p>
+                </div>
+                <div class="mb-7 lg:mb-0" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="mb-3 lg:mb-1">
+                        <img src="./img/data_branco.svg" alt="Local" class="mr-0 md:mr-2 xxl:mr-3 inline-block align-middle scale-90 md:scale-100">
+                        <p class="inline-block align-middle text-white text-lg xs:text-xl md:text-2xl xl:text-4xl xxl:text-39px font-black">13 e 14 <span class="text-sm xs:text-base md:text-lg xl:text-xl xxl:text-2xl"><span class="font-normal">de</span> <span class="font-bold">setembro</span>  <span class="font-normal">| 22</span></span></p>
+                    </div>
+                    <div>
+                        <img src="./img/local_branco.svg" alt="Local" class="xs:ml-1 md:mr-2 xl:mr-4 inline-block align-middle scale-90 md:scale-100">
+                        <p class="inline-block align-middle text-white text-sm xs:text-base md:text-lg xl:text-xl xxl:text-22px font-bold">Curitiba, PR</p>
+                    </div>
+                </div>
+                <div class="ml-6 lg:ml-0" data-aos="fade-up" data-aos-duration="1400">
+                    <ul class="list-white text-xs sm:text-sm md:text-15px lg:text-base xl:text-lg font-medium">
+                        <li class="mb-2 text-white"><span class="font-black">4 MASTERCLASS</span> AO VIVO 100% ONLINE</li>
+                        <li class="mb-2 text-white"><span class="font-black">DUPLA</span> CERTIFICAÇÃO</li>
+                        <li class="mb-2 text-white">PLATAFORMA <span class="font-black">INTERATIVA</span></li>
+                        <li class="mb-2 text-white">MATERIAL <span class="font-black">COMPLEMENTAR</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse md:flex-row flex-top items-start">
+                <img src="./img/nova_lei_de_licitacoes.png" alt="Mão Tecnológica" class="mr-9 xxl:mr-11 w-72 xs:w-96 sm:w-[580px] lg:w-[700px] xl:w-[900px] xxl:w-auto">
+                <p class="px-7 md:px-0 mb-7 md:mb-0 mr-0 md:mr-28 lg:mr-32 xl:mr-[150px] xxl:mr-[200px] font-medium text-xs xs:text-sm sm:text-15px lg:text-base xl:text-lg xxl:text-xl leading-5 sm:leading-6 lg:leading-8 xl:leading-8 xxl:leading-8 text-white" data-aos="fade-up" data-aos-duration="1150">Essa experiência de educação presencial continuada visa apresentar as <span class="font-black">principais alterações e boas práticas internalizadas pela Nova Lei de Licitações e Contratações</span>. Considerando que, em 01 de abril de 2021 foi publicada a nova Lei de Licitações e Contratações, provocando <span class="font-black">alterações substanciais nas contratações públicas</span>. Saliente-se que a lei tem <span class="font-black">vigência imediata</span>, a contar da publicação, o que significa dizer que a Administração Pública já pode seguir seus termos ou aguardar o prazo de 02 anos estabelecido no art. 193 para adaptação. </p>
+            </div>
+        </div>
+
+        <!-- Jornada -->
+        <div id="programacao" class="-mb-[128px] pt-24 xs:pt-32 sm:pt-40 md:pt-60 xl:pt-72 xxl:pt-[380px] relative bg-white z-20">
+            <img src="./img/transicao_azul.jpg" alt="Transição" class="absolute top-0 left-0 right-0">
+            <p class="md:mb-2 lg:mb-3 xl:mb-5 text-jml-light-gray text-center tracking-widest md:tracking-[.3em] font-medium text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl xxl:text-[34px]" data-aos="fade-up" data-aos-duration="800">UMA <span class="font-extrabold">JORNADA</span> DE</p>
+            <h2 class="px-3 sm:px-0 mb-12 md:mb-16 lg:mb-24 xl:mb-32 xxl:mb-48 text-center font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl xxl:text-[64px] leading-7 sm:leading-10 text-[#919191]" data-aos="fade-up" data-aos-duration="1100"><span class="font-extralight">#</span><span class="text-jml-blue">conhecimento</span>. <span class="font-extralight">#</span><span class="text-jml-blue">conexão</span>. <span class="font-extralight">#</span><span class="text-jml-blue">transformação</span>.</h2>
+            <div class="mx-auto md:mx-0 max-w-[364px] md:max-w-none px-3 sm:px-0 mb-20 md:mb-20 xxl:mb-40 grid md:grid-cols-2 gap-7 xs:gap-10 md:gap-16 lg:gap-24 xl:gap-32 xxl:gap-44 items-center justify-center md:justify-start text-jml-light-gray">
+                <div class="col-span-1 relative text-right" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="titulo-divisoria divisoria-esquerda absolute font-extrabold text-jml-blue text-left z-0">PRE <br>SEN <br>CIAL</p>
+                    <img src="./img/simbolo_evento_presencial.png" alt="Conexão" class="inline-block relative w-52 xs:w-60 sm:w-72 md:w-[350px] xl:w-[400px] xxl:w-auto">
+                </div>
+                <div class="col-span-1 relative" data-aos="fade-down" data-aos-duration="1150">
+                    <h3 class="mb-2 sm:mb-3 xxl:mb-7 text-jml-blue text-base sm:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold tracking-widest">EVENTO<br> <span class="tracking-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">PRESENCIAL</span></h3>
+                    <div class="mb-1">
+                        <img src="./img/data_azul.svg" alt="Data" class="mr-2 xl:mr-3 inline-block align-middle scale-90 md:scale-100">
+                        <p class="inline-block align-middle text-lg xs:text-xl md:text-2xl xl:text-4xl xxl:text-39px font-black">13 e 14 <span class="text-sm xs:text-base md:text-lg xl:text-xl xxl:text-2xl"> <span class="font-normal">de</span> <span class="font-bold">setembro</span>  <span class="font-normal">| 22</span></span></p>
+                    </div>
+                    <div class="mb-4 md:mb-5 xl:mb-8 xxl:mb-12">
+                        <img src="./img/local_azul.svg" alt="Local" class="ml-1 mr-2 xl:mr-3 inline-block align-middle scale-90 md:scale-100">
+                        <p class="inline-block align-middle text-sm xs:text-base md:text-lg xl:text-xl xxl:text-22px font-bold">Curitiba, PR</p>
+                    </div>
+                    <p class="mb-2 md:mb-3 text-jml-light-black font-extrabold text-sm xs:text-base md:text-lg">Programação Presencial:</p>
+                    <ul class="list-blue mb-5 xl:mb-8 xxl:mb-12 text-xs xs:text-sm md:text-base xl:text-lg xxl:text-xl font-medium">
+                        <li class="mb-1 xl:mb-2">Módulo I - Aplicabilidade da Lei</li>
+                        <li class="mb-1 xl:mb-2">Módulo II - Planejamento e atores do processo</li>
+                        <li class="mb-1 xl:mb-2">Módulo III - Modalidades e fluxo do processo</li>
+                        <li class="mb-1 xl:mb-2">Módulo IV - Contratação direta</li>
+                    </ul>
+                    <a href="./materiais/Nova Lei _Boas praticas_Curso_Presencial.pdf" target="_blank"><button class="px-2 xs:px-4 md:px-6 xxl:px-7 py-2 md:py-3 xxl:py-4 border-2 md:border-[3px] border-jml-blue rounded-2xl text-jml-blue tracking-widest font-extrabold text-xs md:text-sm xl:text-15px xxl:text-base leading-tight sm:leading-normal duration-300 hover:text-jml-light-gray group hover:border-jml-light-gray"><img src="./img/pdf_azul.svg" alt="PDF" class="inline-block align-middle mr-1 xl:mr-2 xxl:mr-3 duration-300 group-hover:rotate-6 scale-75 sm:scale-90 xl:scale-100"> BAIXE O PDF COM CONTEÚDO COMPLETO</button></a>
+                </div>
+            </div>
+            <div class="mx-auto md:mx-0 max-w-[364px] md:max-w-none px-3 sm:px-0 mb-16 grid md:grid-cols-2 gap-7 xs:gap-10 md:gap-16 lg:gap-24 xl:gap-32 xxl:gap-44 items-center justify-center md:justify-start">
+                <div class="md:pl-20 lg:pl-28 xl:pl-32 xxl:pl-0 col-span-1 relative text-right text-jml-light-gray order-2 md:order-1" data-aos="fade-down" data-aos-duration="1150">
+                    <div class="inline-block text-left">
+                    <h3 class="text-jml-blue text-base sm:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold tracking-widest">4 AULAS<br> <span class="tracking-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">MASTERCLASS ONLINE</span></h3>
+                    <p class="mb-3 md:mb-5 xl:mb-7 xxl:mb-8 jml-gray font-extrabold text-lg lg:text-xl xl:text-2xl xxl:text-3xl">100% AO VIVO</p>
+                    <div class="mb-4 md:mb-6 lg:mb-7">
+                        <img src="./img/duracao_azul.svg" alt="Relógio" class="mr-1 xl:mr-2 inline-block align-middle scale-75 md:scale-90 xl:scale-100">
+                        <p class="inline-block align-middle text-lg xs:text-xl md:text-2xl xl:text-4xl xxl:text-39px font-black">16 <span class="text-sm xs:text-base md:text-lg xl:text-xl xxl:text-2xl"><span class="font-bold">horas</span></span></p>
+                    </div>
+                    <ul class="list-blue mb-5 xl:mb-6 xxl:mb-10 text-xs xs:text-sm md:text-base xl:text-lg xxl:text-xl font-medium">
+                        <li class="mb-1 xl:mb-2">Procedimentos Auxiliares e Catálogo de padronização <span class="font-extrabold">(4h)</span><br> <span class="text-sm md:text-base xl:text-lg">Marcus Alcântara</span></li>
+                        <li class="mb-1 xl:mb-2">Dispensa eletrônica, com simulação prática <span class="font-extrabold">(4h)</span><br> <span class="text-sm md:text-base xl:text-lg">Saulo David</span></li>
+                        <li class="mb-1 xl:mb-2">Governança e Gestão de Riscos na Nova Lei de Licitações <span class="font-extrabold">(4h)</span><br> <span class="text-sm md:text-base xl:text-lg">Thiago Bueno de Oliveira</span></li>
+                        <li class="mb-1 xl:mb-2">Regulamentação da Nova Lei de Licitações <span class="font-extrabold">(4h)</span><br> <span class="text-sm md:text-base xl:text-lg">Victor Amorim</span></li>
+                    </ul>
+                    <p class="mb-3 md:mb-4 xl:mb-5 xxl:mb-7 max-w-[650px] text-xs md:text-15px xl:text-base font-medium leading-4 md:leading-5">As aulas online serão agendadas e realizadas em até 30 dias após a realização do presencial, em datas que serão informadas com antecedência pela organização.</p>
+                    <p class="max-w-[650px] text-xs md:text-15px xl:text-base font-medium leading-4 md:leading-5">A gravação das aulas online ficarão disponíveis por 30 dias após a realização.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative text-left order-1 md:order-2" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="titulo-divisoria divisoria-direita absolute font-extrabold text-jml-blue text-right z-0">MAS <br>TER <br>CLASS</p>
+                    <img src="./img/simbolo_masterclass.png" alt="Gráfico" class="inline-block relative w-40 xs:w-48 sm:w-64 md:w-80 lg:w-96 xxl:w-auto">
+                </div>
+            </div>
+            <div class="mx-auto md:mx-0 max-w-[364px] md:max-w-none px-3 sm:px-0 mb-16 md:mb-40 xl:mb-56 grid md:grid-cols-2 gap-7 xs:gap-10 md:gap-16 lg:gap-24 xl:gap-32 xxl:gap-44 items-center justify-center md:justify-start text-jml-light-gray">
+                <div class="col-span-1 relative text-right" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="titulo-divisoria divisoria-esquerda absolute font-extrabold text-jml-blue text-left z-0">INTE <br>RATI <br>VIDADE</p>
+                    <img src="./img/simbolo_plataforma_i-nterativa.png" alt="Computador" class="w-72 xs:w-72 sm:w-[470px] lg:w-[570px] xxl:w-auto md:-mr-4 lg:-mr-8 inline-block relative">
+                </div>
+                <div class="col-span-1 relative flex md:block flex-col flex-1" data-aos="fade-down" data-aos-duration="1150">
+                    <h3 class="mb-4 lg:mb-5 xl:mb-7 text-jml-blue text-base sm:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold tracking-widest">PLATAFORMA<br> <span class="tracking-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">INTERATIVA</span></h3>
+                    <ul class="list-blue mb-12 text-xs xs:text-sm md:text-base xl:text-lg xxl:text-xl font-medium">
+                        <li class="mb-1 xl:mb-2">FÓRUM DE PERGUNTAS E DEBATE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto md:mx-0 max-w-[364px] md:max-w-none px-3 sm:px-0 mb-20 xs:mb-24 sm:mb-20 md:mb-36 xl:mb-44 xxl:mb-60 grid md:grid-cols-2 gap-7 xs:gap-10 md:gap-16 lg:gap-24 xl:gap-32 xxl:gap-44 items-center justify-center md:justify-start">
+                <div class="col-span-1 relative flex md:block flex-col flex-1 text-right text-jml-light-gray order-2 md:order-1" data-aos="fade-down" data-aos-duration="1150">
+                    <div class="md:pr-28 lg:pr-36 xl:pr-48 xxl:pr-60 inline-block text-left">
+                        <h3 class="mb-3 md:mb-5 xl:mb-9 text-jml-blue text-base sm:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold tracking-widest"><span class="tracking-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">MATERIAIS </span><br>COMPLEMENTARES</h3>
+                        <ul class="list-blue mb-10 text-xs xs:text-sm md:text-base xl:text-lg xxl:text-xl font-medium">
+                            <li class="mb-1 xl:mb-2">ARTIGOS</li>
+                            <li class="mb-1 xl:mb-2">APRESENTAÇÕES</li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-1 relative text-left order-1 md:order-2" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="titulo-divisoria divisoria-direita absolute font-extrabold text-jml-blue text-right z-0">MATE <br>RI <br>AIS</p>
+                    <img src="./img/simbolo_materiais_complementares.png" alt="Livro" class="sm:-ml-12 md:-ml-20 lg:-ml-28 xl:-ml-40 xxl:-ml-72 w-72 xs:w-96 sm:w-[520px] lg:w-[600px] xl:w-[650px] xxl:w-auto relative inline-block">
+                </div>
+            </div>
+            <div class="mx-auto md:mx-0 max-w-[364px] md:max-w-none px-3 sm:px-0 mb-44 xs:mb-48 md:mb-64 xl:mb-80 grid md:grid-cols-2 gap-7 xs:gap-10 md:gap-16 lg:gap-24 xl:gap-32 xxl:gap-44 items-center justify-center md:justify-start text-jml-light-gray">
+                <div class="col-span-1 relative text-right" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="titulo-divisoria divisoria-esquerda divisoria-certificacao absolute font-extrabold text-jml-blue text-left z-0">CERTI <br>FICA <br>ÇÃO</p>
+                    <img src="./img/simbolo_dupla_certificacao.png" alt="Formação" class="inline-block relative w-44 xs:w-52 sm:w-64 md:w-[360px] lg:w-[410px] xl:w-[480px] xxl:w-auto">
+                </div>
+                <div class="pr-4 lg:pr-0 col-span-1 relative" data-aos="fade-down" data-aos-duration="1150">
+                    <img src="./img/certificacao_profissional.svg" alt="Certificação Profissional" class="certificacao">
+                    <h3 class="mb-3 md:mb-5 xl:mb-7 text-jml-blue text-base sm:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold tracking-widest">DUPLA<br> <span class="tracking-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">CERTIFICAÇÃO</span></h3>
+                    <div class="mb-4 md:mb-6 lg:mb-7">
+                        <img src="./img/duracao_azul.svg" alt="Relógio" class="mr-1 xl:mr-2 inline-block align-middle scale-75 md:scale-90 xl:scale-100">
+                        <p class="inline-block align-middle text-lg xs:text-xl md:text-2xl xl:text-4xl xxl:text-39px font-black">40 <span class="text-sm xs:text-base md:text-lg xl:text-xl xxl:text-2xl"><span class="font-bold">horas totais</span></span></p>
+                    </div>
+                    <ul class="list-blue mb-12 text-xs xs:text-sm md:text-base xl:text-lg xxl:text-xl font-medium">
+                        <li class="mb-1 xl:mb-2"><span class="font-extrabold">CERTIFICAÇÃO IMPRESSA</span> - 16h curso presencial,<br class="hidden md:block"> 16h em masterclass online e 8h de atividades complementares.</li>
+                        <li class="mb-1 xl:mb-2"><span class="font-extrabold">CERTIFICAÇÃO DIGITAL</span> - EMISSÃO AUTOMÁTICA<br class="hidden md:block"> PELA PLATAFORMA</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Conteúdos em Destaque -->
+        <div id="destaques" class="pt-14 xs:pt-20 lg:pt-32 xxl:pt-44 pb-16 sm:pb-20 md:pb-24 xl:pb-28 xxl:pb-32 rounded-tl-[40px] lg:rounded-tl-[80px] xxl:rounded-tl-[128px] rounded-tr-[40px] lg:rounded-tr-[80px] xxl:rounded-tr-[128px]relative flex flex-col items-center bg-conteudos bg-cover bg-bottom z-50">
+            <h2 class="mb-12 xs:mb-14 md:mb-20 xxl:mb-24 text-white font-extrabold text-xl xs:text-2xl md:text-4xl xxl:text-5xl text-center">CONTEÚDOS <br> <span class="tracking-widest text-base xs:text-xl md:text-2xl xxl:text-3xl">EM DESTAQUE</span></h2>
+            <div class="px-4 sm:px-0 w-full sm:w-[650px] md:w-[700px] lg:w-[1200px] xxl:w-[1570px] mx-auto flex flex-row flex-wrap justify-center gap-7 lg:gap-14">
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="500">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Artefatos de<br> planejamento:<br> PCA e ETP.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="600">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Pesquisa  de preços<br> e justificativas nas<br> contratações diretas.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="700">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Regras <br>aplicáveis às<br> compras.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="800">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Catálogo de<br> padronização
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="900">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Atores do processo: <br>designação, atribuições, <br>responsabilidades, <br>segregação de funções e <br>gestão por competência.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1000">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Novidades em <br>matéria de <br>modalidades.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1100">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Fluxo do processo:<br> inversão de fases,<br> formato eletrônico e<br> etapa recursal.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1200">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Modos de<br> disputa.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1300">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Procedimentos<br> auxiliares.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1400">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Contratação<br> direta: principais<br> alterações.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1500">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Dispensa<br> eletrônica.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1600">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Controle de<br> legalidade do<br> processo e atuação<br> da procuradoria<br> jurídica.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1700">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Governança e<br> Gestão de Riscos<br> na Lei 14.133/21.
+                </div>
+                <div class="bloco-conteudos mb-0 xs:mb-5 lg:mb-0 min-h-[120px] sm:min-h-[170px] lg:min-h-[213px] rounded-3xl md:rounded-[35px] xxl:rounded-[42px] rounded-tl-none relative flex items-center justify-center bg-white/80 text-jml-gray text-center font-extrabold text-xs md:text-sm xxl:text-base group duration-300 hover:bg-white" data-aos="fade-up" data-aos-duration="1800">
+                    <svg class="absolute -top-7 md:-top-7 -left-6 md:-left-9 duration-300 group-hover:rotate-6 scale-75 md:scale-90 xxl:scale-100" id="Grupo_208" data-name="Grupo 208" xmlns="http://www.w3.org/2000/svg" width="77" height="78" viewBox="0 0 77 78">
+                        <ellipse class="duration-300 group-hover:fill-jml-text-blue" id="Elipse_33" data-name="Elipse 33" cx="38.5" cy="39" rx="38.5" ry="39" transform="translate(0 0)" fill="#0025ff"/>
+                        <path id="ic_star_border_24px" d="M40.686,16l-13.908-1.2L21.343,2,15.908,14.824,2,16l10.561,9.149-3.172,13.6,11.954-7.215L33.3,38.752l-3.153-13.6ZM21.343,27.92,14.07,32.311,16,24.032,9.583,18.461l8.472-.735,3.288-7.8,3.308,7.815,8.472.735L26.7,24.051l1.934,8.279Z" transform="translate(16.965 16.965)" fill="#fff"/>
+                    </svg>
+                    Tratamento<br> diferenciado aplicável<br> às pequenas<br> empresas.
+                </div>
+            </div>
+        </div>
+
+        <!-- Palestrantes -->
+        <div id="palestrantes" class="px-5 xs:px-0 pt-24 xs:pt-32 sm:pt-40 md:pt-56 xl:pt-72 xxl:pt-[380px] pb-16 sm:pb-20 md:pb-24 xs:pb-32 xxl:pb-40 relative bg-white z-20">
+            <img src="./img/transicao_cinza_branco.jpg" alt="Transição" class="absolute -top-px left-0 right-0">
+            <h2 class="mb-5 sm:mb-8 md:mb-10 xl:mb-16 xxl:mb-24 text-jml-blue font-extrabold text-xl xs:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl text-center">PALESTRANTES</h2>
+            <h3 class="mb-3 xl:mb-5 text-jml-light-gray tracking-widest text-base xs:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold text-center">CURSO PRESENCIAL</h3>
+            <div class="w-full xs:w-96 md:w-[970px] xl:w-[1131px] mx-auto mb-10 xs:mb-16 xl:mb-20 xxl:mb-28 px-7 md:px-10 xl:px-14 py-7 md:py-8 xl:py-11 border-jml-blue border-[3px] rounded-3xl flex flex-col md:flex-row justify-between items-center" data-aos="fade-up" data-aos-duration="1150">
+                <img src="./img/julieta_mendes.png" alt="Julieta Mendes Lopes" class="mb-4 md:mb-0 w-32 xs:w-40 md:w-[190px] xl:w-auto mr-0 md:mr-10 xl:mr-14">
+                <div class="flex flex-col flex-1">
+                    <p class="mb-3 xl:mb-4 text-xl xs:text-2xl md:text-3xl xl:text-5xl text-jml-blue leading-5 xs:leading-6 md:leading-8 xl:leading-10 font-extrabold">JULIETA <br> <span class="text-base xs:text-xl md:text-3xl xl:text-[40px]"> MENDES LOPES</span></p>
+                    <a href="https://www.linkedin.com/in/julieta-mendes-27991a100/" target="_blank" class="scale-90 md:scale-100"><button class="mb-3 md:mb-0 w-36 xs:w-40 md:w-44 py-2 rounded-full bg-jml-blue text-white text-center font-extrabold text-xs xs:text-sm xl:text-base tracking-wider group duration-300 hover:bg-jml-text-blue"><img src="./img/linkedin_menor.svg" alt="Linkedin" class="mr-2 inline-block align-middle relative -top-1 duration-300 group-hover:rotate-6 scale-75 xs:scale-90 md:scale-100"> LINKEDIN</button></a>
+                </div>
+                <p class="w-auto md:w-96 xl:w-80 text-gray font-medium text-xs xs:text-13px md:text-sm xl:text-base leading-5 xs:leading-6 md:leading-7">Sócia Fundadora e Vice-Presidente do Grupo JML, empresa especializada em contratações e gestão pública. Mestre em Direito Público. Graduada em Direito pela Faculdade de Direito de Curitiba. Professora do MBA em Compliance Público da Pólis Civitas. Coordenadora e professora da especialização [...]</p>
+            </div>
+            <h3 class="mb-3 xl:mb-5 text-jml-light-gray tracking-widest text-base xs:text-lg md:text-xl xl:text-2xl xxl:text-3xl font-extrabold text-center">AULAS MASTERCLASS - ONLINE</h3>
+            <div class="px-0 md::px-4 xl:px-0 w-full xs:w-96 sm:w-auto sm:max-w-[700px] lg:max-w-[1320px] xxl:max-w-[1454px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 xl:gap-10">
+                <div class="py-8 sm:py-14 px-4 border-jml-blue border-[3px] rounded-3xl col-span-1 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./img/marcus_alcantara.png" alt="Marcus Alcântara" class="mb-4 md:mb-8 w-32 xs:w-40 md:w-auto">
+                    <p class="mb-2 lg:mb-3 text-jml-blue text-center text-lg xs:text-xl md:text-2xl lg:text-[33px] leading-4 xs:leading-5 md:leading-6 lg:leading-7 font-extrabold">MARCUS <br> <span class="text-base xs:text-lg md:text-xl lg:text-[26px]">ALCÂNTARA</span></p>
+                    <a href="https://www.linkedin.com/in/marcus-alcantara-a114b7a0/" target="_blank"><button class="w-36 xs:w-40 md:w-44 py-2 rounded-full bg-jml-blue text-white text-center font-extrabold text-xs xs:text-sm xl:text-base tracking-wider group duration-300 hover:bg-jml-text-blue"><img src="./img/linkedin_menor.svg" alt="Linkedin" class="mr-2 inline-block align-middle relative -top-1 duration-300 group-hover:rotate-6 scale-75 xs:scale-90 md:scale-100"> LINKEDIN</button></a>
+                </div>
+                <div class="py-8 sm:py-14 px-4 border-jml-blue border-[3px] rounded-3xl col-span-1 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="./img/saulo_david.png" alt="Saulo David" class="mb-4 md:mb-8 w-32 xs:w-40 md:w-auto">
+                    <p class="mb-2 lg:mb-3 text-jml-blue text-center text-lg xs:text-xl md:text-2xl lg:text-[33px] leading-4 xs:leading-5 md:leading-6 lg:leading-7 font-extrabold">SAULO <br> <span class="text-base xs:text-lg md:text-xl lg:text-[26px]">DAVID</span></p>
+                    <a href="https://www.instagram.com/sauloalvesdavid/" target="_blank"><button class="w-36 xs:w-40 md:w-44 py-2 rounded-full bg-jml-blue text-white text-center font-extrabold text-xs xs:text-sm xl:text-base tracking-wider group duration-300 hover:bg-jml-text-blue"><img src="./img/linkedin_menor.svg" alt="Linkedin" class="mr-2 inline-block align-middle relative -top-1 duration-300 group-hover:rotate-6 scale-75 xs:scale-90 md:scale-100"> LINKEDIN</button></a>
+                </div>
+                <div class="py-8 sm:py-14 px-4 border-jml-blue border-[3px] rounded-3xl col-span-1 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./img/thiago_bueno.png" alt="Thiago Bueno" class="mb-4 md:mb-8 w-32 xs:w-40 md:w-auto">
+                    <p class="mb-2 lg:mb-3 text-jml-blue text-center text-lg xs:text-xl md:text-2xl lg:text-[33px] leading-4 xs:leading-5 md:leading-6 lg:leading-7 font-extrabold">THIAGO <br> <span class="text-base xs:text-lg md:text-xl lg:text-[26px]">BUENO DE OLIVEIRA</span></p>
+                    <a href="https://www.linkedin.com/in/thiago-bueno-094b9318/" target="_blank"><button class="w-36 xs:w-40 md:w-44 py-2 rounded-full bg-jml-blue text-white text-center font-extrabold text-xs xs:text-sm xl:text-base tracking-wider group duration-300 hover:bg-jml-text-blue"><img src="./img/linkedin_menor.svg" alt="Linkedin" class="mr-2 inline-block align-middle relative -top-1 duration-300 group-hover:rotate-6 scale-75 xs:scale-90 md:scale-100"> LINKEDIN</button></a>
+                </div>
+                <div class="py-8 sm:py-14 px-4 border-jml-blue border-[3px] rounded-3xl col-span-1 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1700">
+                    <img src="./img/victor_amorim.png" alt="Victor Amorim" class="mb-4 md:mb-8 w-32 xs:w-40 md:w-auto">
+                    <p class="mb-2 lg:mb-3 text-jml-blue text-center text-lg xs:text-xl md:text-2xl lg:text-[33px] leading-4 xs:leading-5 md:leading-6 lg:leading-7 font-extrabold">VICTOR <br> <span class="text-base xs:text-lg md:text-xl lg:text-[26px]">AMORIM</span></p>
+                    <a href="https://www.linkedin.com/in/victor-amorim-49a276209/" target="_blank"><button class="w-36 xs:w-40 md:w-44 py-2 rounded-full bg-jml-blue text-white text-center font-extrabold text-xs xs:text-sm xl:text-base tracking-wider group duration-300 hover:bg-jml-text-blue"><img src="./img/linkedin_menor.svg" alt="Linkedin" class="mr-2 inline-block align-middle relative -top-1 duration-300 group-hover:rotate-6 scale-75 xs:scale-90 md:scale-100"> LINKEDIN</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Investimento -->
+        <div id="investimento" class="px-5 md:px-0 pt-16 lg:pt-20 xl:pt-28 xxl:pt-36 pb-16 lg:pb-20 xl:pb-24 xxl:pb-28 rounded-[40px] lg:rounded-[80px] xxl:rounded-[128px] relative flex flex-col items-center bg-jml-blue z-[60]">
+            <h2 class="mb-4 md:mb-10 lg:mb-14 xxl:mb-16 text-white font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl xxl:text-5xl">INVESTIMENTO</h2>
+            <div class="md:max-w-[850px] lg:max-w-[1070px] xxl:max-w-[1193px] relative flex flex-col md:flex-row">
+                <div class="mb-8 md:mb-0 w-full md:w-1/2 relative z-10" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="plano-block border-2 md:border-r-0 border-white rounded-bl-[33px]">
+                        <p class="mb-3 xl:mb-4 text-white text-15px sm:text-base lg:text-lg xl:text-xl font-extrabold tracking-widest">PLANO INDIVIDUAL</p>
+                        <p class="px-5 mb-3 rounded-full inline-block text-white font-extrabold text-2xl sm:text-3xl lg:text-5xl xl:text-[56px] bg-black"><span class="text-15px sm:text-xl lg:text-3xl xl:text-[40px] font-normal">R$</span> 6.890</p>
+                        <p class="text-11px lg:text-sm font-medium text-white">(seis mil, oitocentos e noventa reais).</p>
+                    </div>
+                    <div class="plano-obs-block rounded-bl-[33px] absolute bottom-0 bg-black">
+                        <p class="text-white font-medium text-xs sm:text-13px md:text-sm lg:text-base xl:text-lg">A cada 4 (quatro) inscrições do mesmo órgão e vinculadas à mesma fonte pagadora, a JML concederá cortesia para uma 5ª (quinta) inscrição.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 py-8 lg:py-10 xl:py-12 pl-8 lg:pl-10 xl:pl-12 pr-8 xl:pr-10 rounded-[52px] rounded-bl-none relative bg-white text-jml-gray z-20" data-aos="fade-down" data-aos-duration="1100">
+                    <p class="mb-5 xl:mb-6 text-jml-blue font-extrabold tracking-widest text-sm sm:text-base lg:text-lg xl:text-xl">INCLUSOS NO VALOR:</p>
+                    <ul class="list-blue mb-12 text-xs sm:text-13px lg:text-sm xl:text-base font-medium">
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">Curso Presencial</span> nos dias 13 e 14 de setembro – networking e interação com a professora Julieta.</li>
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">4 aulas masterclass on-line e ao vivo,</span> sendo cada masterclass com professor com vasta experiência na sua área de atuação.</li>
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">Dupla certificação:</span> 40 horas totais, sendo 16h no curso presencial, 16h em masterclass online e 8h de atividades complementares.</li>
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">Plataforma interativa,</span> com acesso às gravações das Masterclass, fórum de debate e interação com os professores por 30 dias (curso online);</li>
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">Material didático</span> de acompanhamento das palestras;</li>
+                        <li class="mb-2 sm:mb-3 xl:mb-2"><span class="font-extrabold">04 coffees-breaks e 02 almoços</span> (curso presencial).</li>
+                    </ul>
+                </div>
+                <img src="./img/simbolo_investimento.png" alt="Moedas" class="investimento-img mt-5 xs:mt-0 mx-auto xs:mx-0 xs:absolute z-0 w-[200px] sm:w-[350px] xl:w-[550px] xxl:w-auto">
+            </div>
+        </div>
+
+        <!-- Horários -->
+        <div class="parallax -mt-10 lg:-mt-20 xxl:-mt-[128px] -mb-10 lg:-mb-20 xxl:-mb-[128px] py-24 xs:py-28 md:py-36 lg:py-44 xxl:py-56 relative z-10" data-parallax="scroll" data-image-src="./img/bg_horarios.jpg">
+            <div class="max-w-[822px] lg:max-w-[950px] xl:max-w-[1200px] xxl:max-w-[1368px] mx-auto flex flex-col md:flex-row items-center justify-between xl:justify-start">
+                <img src="./img/simbolo_horarios.png" alt="Ampulheta" class="mb-10 md:mb-0 md:mr-20 lg:mr-28 xl:mr-36 xxl:mr-44 w-36 xs:w-52 md:w-72 lg:w-96 xxl:w-auto" data-aos="fade-up" data-aos-duration="1100">
+                <div class="px-5 sm:px-0" data-aos="fade-down" data-aos-duration="1100">
+                    <h2 class="mb-5 md:mb-7 xl:mb-8 xxl:mb-12 font-extrabold text-white text-xl sm:text-2xl md:text-3xl xl:text-4xl xxl:text-5xl">HORÁRIOS</h2>
+                    <div class="mb-3 sm:mb-5 md:mb-6 xl:mb-8 xxl:mb-12 flex flex-row">
+                        <img src="./img/credenciamento.svg" alt="Crachá" class="ml-3 mr-6 sm:mr-8 xxl:mr-9 scale-75 sm:scale-100">
+                        <div>
+                            <p class="text-jml-text-blue text-xs sm:text-13px md:text-sm xl:text-base leading-5 sm:leading-8 font-extrabold tracking-widest uppercase">Credenciamento e entrega do material:</p>
+                            <p class="text-white leading-6 sm:leading-8 text-sm xs:text-15px sm:text-lg xl:text-xl xxl:text-[26px]">8h às 8h30min;</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 sm:mb-5 md:mb-6 xl:mb-8 xxl:mb-12 flex flex-row">
+                        <img src="./img/palestra.svg" alt="Aula" class="ml-2 mr-4 sm:mr-6 xxl:mr-7 scale-75 sm:scale-100">
+                        <div>
+                            <p class="text-jml-text-blue text-xs sm:text-13px md:text-sm xl:text-base leading-5 sm:leading-8 font-extrabold tracking-widest uppercase">Palestra:</p>
+                            <p class="text-white leading-6 sm:leading-8 text-sm xs:text-15px sm:text-lg xl:text-xl xxl:text-[26px]">das 8h30min às 12h30min e das 14h às 18h;</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 sm:mb-5 md:mb-6 xl:mb-8 xxl:mb-12 flex flex-row">
+                        <img src="./img/coffee-break.svg" alt="Café" class="ml-3 mr-6 sm:mr-7 xxl:mr-8 scale-75 sm:scale-100">
+                        <div>
+                            <p class="text-jml-text-blue text-xs sm:text-13px md:text-sm xl:text-base leading-5 sm:leading-8 font-extrabold tracking-widest uppercase">Coffee-break:</p>
+                            <p class="text-white leading-6 sm:leading-8 text-sm xs:text-15px sm:text-lg xl:text-xl xxl:text-[26px]">às 10h e às 16h;</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row">
+                        <img src="./img/almoco.svg" alt="Refeição" class="mr-4 sm:mr-5 xxl:mr-6 scale-75 sm:scale-100">
+                        <div>
+                            <p class="text-jml-text-blue text-xs sm:text-13px md:text-sm xl:text-base leading-5 sm:leading-8 font-extrabold tracking-widest uppercase">Almoço:</p>
+                            <p class="text-white leading-6 sm:leading-8 text-sm xs:text-15px sm:text-lg xl:text-xl xxl:text-[26px]">às 12h30min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local do Evento -->
+        <div id="local" class="px-5 lg:px-0 pt-16 md:pt-24 lg:pt-32 xxl:pt-36 pb-16 md:pb-20 xxl:pb-24 rounded-tl-[40px] lg:rounded-tl-[80px] xxl:rounded-tl-[128px] rounded-tr-[40px] lg:rounded-tr-[80px] xxl:rounded-tr-[128px] relative bg-local bg-cover bg-bottom z-20">
+            <div class="max-w-[1100px] xl:max-w-[1200px] xxl:max-w-[1420px] mx-auto flex flex-col md:flex-row items-center">
+                <img src="./img/simbolo_local.png" alt="Mapa" class="mb-7 sm:mb-8 md:mb-0 md:mr-[102px] xl:mr-[92px] xxl:mr-[136px] w-48 xs:w-60 sm:w-72 md:w-[420px] xl:w-[520px] xxl:w-auto" data-aos="fade-down" data-aos-duration="1150">
+                <div class="flex flex-col text-jml-gray" data-aos="fade-up" data-aos-duration="1150">
+                    <h2 class="mb-3 font-extrabold text-sm sm:text-base lg:text-xl xl:text-2xl xxl:text-[26px] tracking-widest leading-5 lg:leading-7 xl:leading-8 xxl:leading-10 text-jml-gray">LOCAL DO EVENTO PRESENCIAL <br> 13 E 14 DE SETEMBRO</h2>
+                    <p class="mb-2 lg:mb-3 xxl:mb-4 font-extrabold text-xl sm:text-2xl lg:text-3xl xl:text-4xl xxl:text-[40px] text-jml-blue leading-6 sm:leading-7 lg:leading-9 xl:leading-10">GRAND MERCURE <br> CURITIBA RAYON</p>
+                    <div class="mb-5 sm:mb-3 lg:mb-4 xl:mb-5 xxl:mb-6 flex flex-col sm:flex-row">
+                        <div class="mb-2 sm:mb-0 mr-3 mt-2 text-sm sm:text-15px lg:text-base xl:text-lg font-medium leading-6 lg:leading-7 xl:leading-8">
+                            <address class="not-italic">Rua Visconde de Nácar, 1424 - Centro, Curitiba - PR</address>
+                            <p>Reservas: <a href="mailto:hb8p5-re@accor.com" class="underline">hb8p5-re@accor.com</a></p>
+                            <p>Fone: <a href="tel:+5504135320150">(41) 3532-0150</a></p>
+                        </div>
+                        <a href="https://www.google.com/maps/place/Grand+Mercure+Curitiba+Rayon/@-25.4346099,-49.276542,15z/data=!4m8!3m7!1s0x0:0xd332a0bc2e7095e0!5m2!4m1!1i2!8m2!3d-25.4345817!4d-49.2765164" target="_blank"><button class="mt-1 xl:mt-0 px-4 xl:px-5 py-1 xl:py-2 border-2 border-jml-blue rounded-full text-jml-blue text-13px sm:text-sm lg:text-15px xl:text-base xxl:text-lg font-bold duration-300 group hover:border-jml-gray hover:text-jml-gray">MAPA <img src="./img/flecha_azul.svg" alt="Flecha" class="xl:ml-1 xxl:ml-2 inline-block align-middle duration-300 group-hover:rotate-6 scale-75 sm:scale-90 xl:scale-100"></button></a>
+                    </div>
+                    <div class="mb-4 lg:mb-5 xl:mb-6 flex flex-row text-13px sm:text-sm lg:text-base leading-6 lg:leading-7">
+                        <div class="mr-7 sm:mr-10">
+                            <h3 class="font-extrabold">QUARTO SUPERIOR</h3>
+                            <p>Single</p>
+                            <p>Duplo</p>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold">TARIFAS</h3>
+                            <p>R$270 + 5%</p>
+                            <p>R$310 + 5%</p>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-13px sm:text-sm lg:text-base">ESTACIONAMENTO:</h3>
+                    <p class="mb-3 lg:mb-4 xl:mb-5 text-13px sm:text-sm lg:text-base">R$ 30,00 por dia/por veículo.</p>
+                    <p class="mb-4 lg:mb-5 text-13px sm:text-sm lg:text-base">*Informar que está inscrito no evento para garantir as <br> condições especiais na tarifa de hospedagem.</p>
+                    <a href="https://all.accor.com/hotel/B8P5/index.pt-br.shtml" target="_blank"><button class="mb-7 px-4 xl:px-6 xxl:px-11 py-2 lg:py-3 xl:py-5 border-[3px] border-jml-blue rounded-xl text-13px sm:text-sm lg:text-15px xl:text-base tracking-wider font-bold text-jml-blue duration-300 hover:bg-jml-blue hover:text-white">MAIS INFORMAÇÕES</button></a>
+                    <div class="w-[280px] sm:w-auto sm:max-w-[455px] lg:max-w-[510px] xl:max-w-[571px] p-3 xl:p-4 rounded-3xl flex flex-col sm:flex-row sm:items-center bg-jml-light-gray">
+                        <img src="./img/simbolo_hospedagem.png" alt="Cama" class="mb-4 sm:mb-0 mr-4 w-28 sm:w-40 lg:w-48 xl:w-auto">
+                        <div class="mb-3 sm:mb-0">
+                           <h3 class="mb-2 xl:mb-0 text-jml-text-blue font-extrabold tracking-widest text-13px sm:text-sm lg:text-15px xl:text-base xxl:text-lg">OPÇÕES DE HOSPEDAGEM</h3> 
+                           <p class="text-white text-13px sm:text-sm lg:text-15px xl:text-base leading-5 xl:leading-7">Entrar em contato com a Central de Relacionamento JML: 41. 3595.9999.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conheça Curitiba -->
+        <div class="pt-6 md:pt-7 pb-16 md:pb-24 xxl:pb-28 px-7 md:px-10">
+            <div class="max-w-[1000px] xl:max-w-[1237px] mb-8 md:mb-12 xl:mb-16 xxl:mb-[76px] mx-auto flex flex-col md:flex-row justify-between text-jml-light-gray">
+                <div class="mb-1 sm:mb-2 md:mb-0" data-aos="fade-up" data-aos-duration="1150">
+                    <p class="font-medium text-base sm:text-lg md:text-2xl xl:text-3xl xxl:text-[34px] leading-5 md:leading-8 xxl:leading-6 tracking-widest md:tracking-[.3em]">CONHEÇA</p>
+                    <p class="text-2xl sm:text-3xl md:text-5xl xl:text-6xl xxl:text-[64px] font-extrabold"><span class="font-extralight">#</span><span class="text-jml-blue">Curitiba</span>.</p>
+                </div>
+                <p class="md:max-w-[550px] xl:max-w-[672px] font-medium text-13px sm:text-sm md:text-15px xl:text-base leading-6 xl:leading-7" data-aos="fade-down" data-aos-duration="1150">O evento presencial acontecerá na cidade de Curitiba. Capital paranaense conhecida nacionalmente como a "Cidade Modelo", tem, ao longo dos anos, acumulado diversos prêmios por conta de seu engajamento com o meio ambiente e sua preocupação com o futuro das próximas gerações. É uma cidade que conta com vários pontos turísticos gratuitos, ou a preços acessíveis. Além de grande variedade de opções gastronômicas e de entretenimento. Separamos alguns dos principais cartões de visitas da cidade.</p>
+            </div>
+            <div class="w-48 sm:w-auto mx-auto sm:mx-0 mb-7 md:mb-10 xl:mb-16 xxl:mb-20 grid grid-cols-1 sm:grid-cols-5 gap-3 md:gap-4 text-center text-xs md:text-sm xl:text-base leading-4 md:leading-5 xl:leading-7 text-jml-gray">
+                <div class="col-span-1" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./img/bg_curitiba_1.jpg" alt="Jardim Botânico" class="mb-2 xxl:mb-3 w-full h-40 sm:h-32 md:h-56 xl:h-72 xxl:h-[355px] rounded-3xl object-cover object-center">
+                    <p>Jardim Botânico</p>
+                </div>
+                <div class="col-span-1" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="./img/bg_curitiba_2.jpg" alt="MON" class="mb-2 xxl:mb-3 w-full h-40 sm:h-32 md:h-56 xl:h-72 xxl:h-[355px] rounded-3xl object-cover object-center">
+                    <p>Museu Oscar Niemeyer</p>
+                </div>
+                <div class="col-span-1" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./img/bg_curitiba_3.jpg" alt="Ópera de Arame" class="mb-2 xxl:mb-3 w-full h-40 sm:h-32 md:h-56 xl:h-72 xxl:h-[355px] rounded-3xl object-cover object-center">
+                    <p>Ópera de Arame / Parque das Pedreiras</p>
+                </div>
+                <div class="col-span-1" data-aos="fade-up" data-aos-duration="1700">
+                    <img src="./img/bg_curitiba_4.jpg" alt="Parque Barigui" class="mb-2 xxl:mb-3 w-full h-40 sm:h-32 md:h-56 xl:h-72 xxl:h-[355px] rounded-3xl object-cover object-center">
+                    <p>Parque Barigui</p>
+                </div>
+                <div class="col-span-1" data-aos="fade-up" data-aos-duration="1900">
+                    <img src="./img/bg_curitiba_5.jpg" alt="Passeio a Morretes" class="mb-2 xxl:mb-3 w-full h-40 sm:h-32 md:h-56 xl:h-72 xxl:h-[355px] rounded-3xl object-cover object-center">
+                    <p>Passeio de trem a Morretes</p>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1100">
+                <p class="mb-4 md:mb-5 xl:mb-6 xxl:mb-7 font-medium text-13px sm:text-sm md:text-base xl:text-lg xxl:text-xl">Para sugestões de gastronomia e turismo na cidade, acesse o site oficial do setor turístico do município de Curitiba:</p>
+                <a href="https://turismo.curitiba.pr.gov.br/" target="_blank"><button class="px-5 md:px-8 xl:px-11 py-2 md:py-4 xl:py-5 border-jml-blue border-[3px] rounded-xl text-13px md:text-15px xl:text-base leading-5 font-bold text-jml-blue duration-300 hover:bg-jml-blue hover:text-white">TURISMO.CURITIBA.PR.GOV.BR</button></a>
+            </div>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="pt-12 sm:pt-16 md:pt-20 lg:pt-28 xxl:pt-36 pb-24 xs:pb-32 sm:pb-40 md:pb-52 lg:pb-64 xxl:pb-80 px-10 rounded-tl-[40px] lg:rounded-tl-[80px] xxl:rounded-tl-[128px] rounded-tr-[40px] lg:rounded-tr-[80px] xxl:rounded-tr-[128px] relative bg-jml-blue">
+            <div class="max-w-[880px] lg:max-w-[1000px] xl:max-w-[1258px] mx-auto flex flex-col md:flex-row justify-between items-center text-white">
+                <p class="mb-3 sm:mb-5 md:mb-0 md:mr-20 xl:mr-28 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xxl:text-5xl font-extrabold" data-aos="fade-down" data-aos-duration="1100"><span class="font-extralight">#</span> REDES SOCIAIS</p>
+                <p class="mb-5 md:mb-0 md:mr-14 xl:mr-16 flex-1 text-center sm:text-left text-sm sm:text-base md:text-lg lg:text-xl xxl:text-2xl font-medium leading-6 md:leading-9" data-aos="fade-down" data-aos-duration="1300">Siga as nossas redes sociais com conteúdos exclusivos!</p>
+                <div class="grid grid-cols-4 gap-2" data-aos="fade-down" data-aos-duration="1500">
+                    <a href="https://www.instagram.com/jmlgrupo/" target="_blank">
+                        <div class="p-1 lg:p-2 xl:p-3 h-[50px] lg:h-[54px] xl:h-[60px] border-white border-[3px] rounded-lg col-span-1 flex justify-center items-center duration-300 group hover:bg-white hover:rotate-6">
+                            <svg class="scale-90 lg:scale-100" xmlns="http://www.w3.org/2000/svg" width="28.859" height="28.859" viewBox="0 0 28.859 28.859">
+                                <path class="duration-300 group-hover:fill-jml-gray" id="Caminho_34" data-name="Caminho 34" d="M617.288,298.208q0,4.187-.1,6.023a12.158,12.158,0,0,1-.548,3.188,7.535,7.535,0,0,1-4.574,4.574,12.127,12.127,0,0,1-3.189.548q-1.836.1-6.023.1t-6.023-.1a10.521,10.521,0,0,1-3.188-.612,6.869,6.869,0,0,1-2.8-1.707,7.516,7.516,0,0,1-1.772-2.8,12.164,12.164,0,0,1-.547-3.188q-.1-1.836-.1-6.023t.1-6.023a12.165,12.165,0,0,1,.547-3.189,7.54,7.54,0,0,1,4.574-4.574,12.128,12.128,0,0,1,3.188-.548q1.836-.1,6.023-.1t6.023.1a12.128,12.128,0,0,1,3.189.548A7.536,7.536,0,0,1,616.644,289a13.128,13.128,0,0,1,.58,3.221Q617.288,294.02,617.288,298.208Zm-2.641,5.024q.065-1.417.065-3.994v-2.061q0-2.642-.065-3.994a12.928,12.928,0,0,0-.515-3.479,4.652,4.652,0,0,0-2.77-2.77,12.931,12.931,0,0,0-3.479-.515q-1.417-.065-3.994-.065h-2.061q-2.577,0-3.995.065a13.565,13.565,0,0,0-3.478.515,4.652,4.652,0,0,0-2.77,2.77,12.961,12.961,0,0,0-.516,3.479q-.063,1.416-.064,3.994v2.061q0,2.577.064,3.994a13.6,13.6,0,0,0,.516,3.479,4.884,4.884,0,0,0,2.77,2.77,13.563,13.563,0,0,0,3.478.515q1.417.065,3.995.065h2.061q2.642,0,3.994-.065a12.93,12.93,0,0,0,3.479-.515,4.888,4.888,0,0,0,2.77-2.77A13.562,13.562,0,0,0,614.647,303.232ZM606.563,291.8a7.422,7.422,0,0,1,2.705,2.705,7.368,7.368,0,0,1,0,7.408,7.422,7.422,0,0,1-2.705,2.705,7.367,7.367,0,0,1-7.408,0,7.423,7.423,0,0,1-2.706-2.705,7.372,7.372,0,0,1,0-7.408,7.423,7.423,0,0,1,2.706-2.705,7.368,7.368,0,0,1,7.408,0Zm-.29,9.824a4.821,4.821,0,1,0-3.414,1.417A4.654,4.654,0,0,0,606.273,301.622Zm5.54-12.369a1.731,1.731,0,1,0-1.224,2.963,1.568,1.568,0,0,0,1.191-.516,2,2,0,0,0,.547-1.224A1.674,1.674,0,0,0,611.813,289.253Z" transform="translate(-588.429 -283.778)" fill="#fff"/>
+                            </svg>                          
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/grupojml/" target="_blank">
+                        <div class="p-1 lg:p-2 xl:p-3 h-[50px] lg:h-[54px] xl:h-[60px] border-white border-[3px] rounded-lg col-span-1 flex justify-center items-center duration-300 group hover:bg-white hover:rotate-6">
+                            <svg class="scale-90 lg:scale-100" xmlns="http://www.w3.org/2000/svg" width="13.299" height="27.131" viewBox="0 0 13.299 27.131">
+                                <path class="duration-300 group-hover:fill-jml-gray" id="Caminho_2" data-name="Caminho 2" d="M569,289.089H566.6a2.305,2.305,0,0,0-1.8.6,2.642,2.642,0,0,0-.4,1.6v2.859H569l-.6,4.522h-3.99V312.03h-4.654V298.664H555.7v-4.522h4.056v-3.325a5.885,5.885,0,0,1,1.562-4.355,5.706,5.706,0,0,1,4.223-1.563,25.131,25.131,0,0,1,3.457.2Z" transform="translate(-555.698 -284.899)" fill="#fff"/>
+                              </svg>                                                        
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/jmlgrupo/" target="_blank">
+                        <div class="p-1 lg:p-2 xl:p-3 h-[50px] lg:h-[54px] xl:h-[60px] border-white border-[3px] rounded-lg col-span-1 flex justify-center items-center duration-300 group hover:bg-white hover:rotate-6">
+                            <svg class="scale-90 lg:scale-100" xmlns="http://www.w3.org/2000/svg" width="25.083" height="25.081" viewBox="0 0 25.083 25.081">
+                                <path class="duration-300 group-hover:fill-jml-gray" id="Caminho_32" data-name="Caminho 32" d="M644.372,289.825a3.059,3.059,0,1,1,2.128-.9A2.9,2.9,0,0,1,644.372,289.825Zm2.576,19.035h-5.207V292.12h5.207Zm19.483,0h-5.207v-8.174a9.027,9.027,0,0,0-.336-2.911,2.356,2.356,0,0,0-2.407-1.512,2.623,2.623,0,0,0-2.519,1.344,6.251,6.251,0,0,0-.56,2.967v8.286H650.25V292.12h4.983v2.3h.056a4.473,4.473,0,0,1,1.792-1.847,5.515,5.515,0,0,1,3.135-.9q3.639,0,5.095,2.3a11.318,11.318,0,0,1,1.12,5.711Z" transform="translate(-641.348 -283.778)" fill="#fff"/>
+                              </svg>                                                                                    
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/user/jmleventos" target="_blank">
+                        <div class="p-1 lg:p-2 xl:p-3 h-[50px] lg:h-[54px] xl:h-[60px] border-white border-[3px] rounded-lg col-span-1 flex justify-center items-center duration-300 group hover:bg-white hover:rotate-6">
+                            <svg class="scale-90 lg:scale-100" id="Grupo_37" data-name="Grupo 37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.435" height="21.305" viewBox="0 0 30.435 21.305">
+                                <defs>
+                                  <clipPath id="clip-path">
+                                    <rect id="Retângulo_19" data-name="Retângulo 19" width="30.435" height="21.304" fill="#fff"/>
+                                  </clipPath>
+                                </defs>
+                                <g id="Grupo_36" data-name="Grupo 36" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                  <path class="duration-300 group-hover:fill-jml-gray" id="Caminho_33" data-name="Caminho 33" d="M30.435,6.679A6.679,6.679,0,0,0,23.756,0H6.679A6.679,6.679,0,0,0,0,6.679v7.947A6.679,6.679,0,0,0,6.679,21.3H23.756a6.679,6.679,0,0,0,6.679-6.679ZM20.391,11.248l-7.658,3.789c-.3.162-1.32-.055-1.32-.4V6.863c0-.346,1.029-.563,1.33-.392l7.329,3.989c.308.175.632.618.32.787" transform="translate(0 0)" fill="#fff"/>
+                                </g>
+                              </svg>                                                       
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="./img/transicao_cinza_azul.jpg" alt="Transição" class="absolute left-0 right-0 bottom-0">
+        </div>
+
+        <!-- Protocolos de Segurança -->
+        <div class="protocolos pt-4 sm:pt-0 pb-16 sm:pb-20 lg:pb-28 xl:pb-36 xxl:pb-44 px-6 xl:px-10 -mb-10 lg:-mb-20 xxl:-mb-[128px] relative -top-px z-10">
+            <div class="md:max-w-[870px] lg:max-w-[1150px] xxl:max-w-[1383px] mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0" data-aos="fade-up" data-aos-duration="1100">
+                    <h2 class="mb-2 lg:mb-4 xxl:mb-5 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xxl:text-[40px] font-extrabold leading-6 sm:leading-7 md:leading-8 lg:leading-10 text-jml-text-blue">PROTOCOLOS <br> DE SEGURANÇA_</h2>
+                    <p class="max-w-[400px] lg:max-w-[500px] xl:max-w-[660px] text-white text-xs sm:text-13px md:text-sm lg:text-15px xl:text-base leading-5 sm:leading-6 md:leading-7 lg:leading-8">Seguiremos as medidas de prevenção da Covid-19, de acordo com as diretrizes estabelecidas pelas autoridades locais quanto à realização de eventos presenciais.</p>
+                </div>
+                <img src="./img/simbolo_protocolos_de_seguranca.png" alt="Máscara" class="w-52 xs:w-64 sm:w-80 md:w-[420px] lg:w-[500px] xxl:w-auto" data-aos="fade-down" data-aos-duration="1100">
+            </div>
+        </div>
+
+        <!-- Orientações para Pagamento -->
+        <div class="pagamento rounded-[40px] lg:rounded-[80px] xxl:rounded-[128px] -mb-10 lg:-mb-20 xxl:-mb-[128px] px-5 sm:px-10 relative z-20">
+            <div class="pt-8 sm:pt-14 lg:pt-20 xxl:pt-24 pb-12 sm:pb-16 lg:pb-24 xxl:pb-28 max-w-[930px] lg:max-w-[1100px] xl:max-w-[1309px] mx-auto flex items-center justify-between flex-col md:flex-row text-white">
+               <h2 class="mb-3 sm:mb-4 md:mb-0 font-extrabold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl xxl:text-4xl leading-5 sm:leading-7 md:leading-9 xxl:leading-10 uppercase" data-aos="fade-up" data-aos-duration="1100">Orientações para <br> inscrição e pagamento_</h2>
+               <div class="max-w-[600px] lg:max-w-[650px]" data-aos="fade-down" data-aos-duration="1100">
+                    <p class="mb-5 sm:mb-6 lg:mb-7 xl:mb-8 font-medium text-center md:text-left text-xs sm:text-13px md:text-sm lg:text-15px xl:text-base leading-5 sm:leading-6 lg:leading-7">A inscrição deverá ser efetuada pelo telefone (41) 3595-9999, ou no portal da JML (www.jmlgrupo.com.br); e o respectivo pagamento em nome de Mendes & Lopes Pesquisa, Treinamento e Eventos Ltda., CNPJ nº 07.777.721/0001-51 – Banco:</p>
+                    <div class="mx-auto md:mx-0 py-3 md:py-4 xl:py-5 xs:pl-7 md:pl-9 xl:pl-11 xs:w-[400px] md:w-[460px] lg:w-[568px] rounded-2xl xxl:rounded-3xl bg-white flex flex-col xs:flex-row items-center text-jml-gray">
+                        <img src="./img/caixa_economica.png" alt="Caixa Econômica" class="mb-2 xs:mb-0 xs:mr-6 lg:mr-8 xl:mr-10 w-20 md:w-auto">
+                        <p class="font-bold text-13px xs:text-sm md:text-base lg:text-lg">Caixa Econômica Federal: <br> <span class="font-medium text-xs xs:text-13px md:text-sm lg:text-base">Agência: 0997 - Op: 003 - C/C 161 – 5</span></p>
+                    </div>
+               </div> 
+            </div>
+        </div>
+
+        <!-- Botões Finais -->
+        <div class="px-10 pt-20 lg:pt-32 xl:pt-44 xxl:pt-56 pb-12 xl:pb-20 xxl:pb-24 relative z-10" data-parallax="scroll" data-image-src="./img/bg_topo.jpg">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <a href="#" target="_blank"><button class="w-72 md:w-auto mb-5 md:mb-0 md:mr-6 xl:mr-8 xxl:mr-10 py-3 md:py-5 xl:py-8 xxl:py-10 px-8 xl:px-10 xxl:px-12 rounded-2xl bg-jml-blue text-white text-xs md:text-sm lg:text-15px xl:text-base xxl:text-lg tracking-[.25em] font-bold duration-300 group hover:bg-jml-text-blue" data-aos="fade-up" data-aos-duration="1100"><img src="./img/inscrever_branco.svg" alt="Preenchimento" class="mr-2 md:mr-3 xl:mr-5 inline-block align-middle duration-300 group-hover:rotate-6 scale-75 lg:scale-90 xl:scale-100">QUERO ME INSCREVER</button></a>
+                <a href="./materiais/Nova Lei _Boas praticas_Curso_Presencial.pdf" target="_blank"><button class="w-72 md:w-auto mb-5 md:mb-0 pl-4 xxl:pl-5 pr-6 xl:pr-7 xxl:pr-10 py-2 md:py-4 md:mr-6 xl:mr-8 xxl:mr-10 border-2 lg:border-[3px] border-white rounded-2xl text-white text-xs md:text-sm xl:text-15px xxl:text-base tracking-widest xl:tracking-[.25em] font-bold duration-300 hover:bg-jml-text-blue hover:border-jml-text-blue" data-aos="fade-up" data-aos-duration="1300"><img src="./img/pdf_branco.svg" alt="PDF" class="mr-2 md:mr-3 xl:mr-6 inline-block align-middle duration-300 group-hover:rotate-6 scale-75 lg:scale-90 xl:scale-100">DOWNLOAD PDF</button></a>
+                <a href="#" target="_blank"><button class="w-72 md:w-auto pl-4 xxl:pl-5 pr-6 xl:pr-7 xxl:pr-10 py-2 md:py-4 md:mr-6 xl:mr-8 xxl:mr-10 border-2 lg:border-[3px] border-white rounded-2xl text-white text-xs md:text-sm xl:text-15px xxl:text-base tracking-widest xl:tracking-[.25em] font-bold duration-300 group hover:bg-jml-text-blue hover:border-jml-text-blue" data-aos="fade-up" data-aos-duration="1500"><img src="./img/outros_cursos.svg" alt="Formação" class="mr-2 md:mr-3 xl:mr-6 inline-block align-middle duration-300 group-hover:rotate-6 scale-75 lg:scale-90 xl:scale-100">OUTROS CURSOS JML</button></a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <div class="text-white bg-[#1b1b21]">
+        <div class="border-b border-[#2e2e2e]">
+            <div class="max-w-[900px] xl:max-w-[1250px] mx-auto flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+                <div class="grupo-footer w-full md:w-auto">
+                    <a href="https://portal.jmlgrupo.com.br/" target="_blank"><img src="./img/logo_grupo_jml.png" alt="Grupo JML" class="mx-auto md:mx-0 w-64 xs:w-80 md:w-auto"></a>
+                </div>
+                <div class="endereco-footer w-full md:w-auto text-xs leading-5">
+                    <p>Mendes e Lopes Pesquisa, Treinamento e Eventos Ltda.</p>
+                    <p>CNPJ: 07.777.721/0001-51</p>
+                    <address class="not-italic">Rua Mandaguaçu, 534 - Sobre Loja - Bairro <br> Emiliano Perneta - 83324-430 - Pinhais - PR.</address>
+                </div>
+                <div class="central-footer w-full md:w-auto">
+                    <p class="text-jml-red text-13px xl:text-sm">Central de Relacionamento JML:</p>
+                    <p class="text-jml-red text-sm xl:text-15px font-bold">41 3595.9999</p>
+                    <p class="text-white text-xs xl:text-13px">Orientações JML: <b>41 3906.6963</b></p>
+                    <p class="text-white text-xs xl:text-13px">WhatsApp: <b>41 99622.6851</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[900px] xl:max-w-[1250px] p-5 mx-auto flex justify-between items-center flex-col md:flex-row">
+            <a href="https://portal.jmlgrupo.com.br/" target="_blank"><img src="./img/logo_footer_jml.png" alt="JML Academy, Connect e Corporate School" class="w-72 xs:w-auto mb-7 md:mb-0"></a>
+            <div class="flex flex-row items-center">
+                <a href="https://www.facebook.com/grupojml/" target="_blank">
+                    <div class="mr-2 w-10 h-10 rounded-md border-jml-red border-[3px] flex items-center justify-center duration-300 hover:bg-jml-red group">
+                        <img src="./img/icon-facebook.png" alt="Facebook" class="duration-300 group-hover:rotate-6">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/jmlgrupo/" target="_blank">
+                    <div class="mr-2 w-10 h-10 rounded-md border-jml-red border-[3px] flex items-center justify-center duration-300 hover:bg-jml-red group">
+                        <img src="./img/icon-instagram.png" alt="Instagram" class="duration-300 group-hover:rotate-6">
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=554196226851" target="_blank">
+                    <div class="mr-2 w-10 h-10 rounded-md border-jml-red border-[3px] flex items-center justify-center duration-300 hover:bg-jml-red group">
+                        <img src="./img/icon-whatsapp.png" alt="Whatsapp" class="duration-300 group-hover:rotate-6">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/user/jmleventos" target="_blank">
+                    <div class="mr-2 w-10 h-10 rounded-md border-jml-red border-[3px] flex items-center justify-center duration-300 hover:bg-jml-red group">
+                        <img src="./img/icon-youtube.png" alt="youtube" class="duration-300 group-hover:rotate-6">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/jmlgrupo/ target="_blank">
+                    <div class="mr-2 w-10 h-10 rounded-md border-jml-red border-[3px] flex items-center justify-center duration-300 hover:bg-jml-red group">
+                        <img src="./img/icon-linkedin.png" alt="LinkedIn" class="duration-300 group-hover:rotate-6">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+.img-topo {
+    top: 174px;
+    right: 295px;
+}
+.tit-topo {
+    top: 304px;
+    left: 361px;
+}
+.experiencia-titulo {
+    top: 200px
+}
+.titulo-divisoria {
+    font-size: 234px;
+    opacity: .32;
+    line-height: 219px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.divisoria-esquerda {
+    top: -60px;
+    left: 0;
+}
+.divisoria-direita {
+    top: -160px;
+    right: 0;
+}
+.divisoria-certificacao {
+    top: -140px;
+}
+.list-white {
+    list-style-image: url("../img/ponto_branco.svg");
+}
+.list-white li {
+    padding-left: 5px;
+}
+.list-blue {
+    list-style-image: url("../img/ponto_azul.svg");
+    padding-left: 5px;
+    margin-left: 26px;
+}
+.list-blue li {
+    padding-left: 10px;
+}
+.certificacao {
+    position: absolute;
+    top: -90px;
+    left: 400px
+}
+.bloco-conteudos {
+    width: calc(20% - 52px);
+}
+.plano-block {
+    margin-top: 84px;
+    padding: 84px 0 150px 65px;
+}
+.plano-obs-block {
+    padding: 36px;
+    margin-left: 66px;
+}
+.investimento-img {
+    right: -183px;
+    bottom: 23px;
+}
+.protocolos {
+    background: transparent linear-gradient(0deg, #535353 0%, #272727 90%) 0% 0% no-repeat padding-box
+}
+.pagamento {
+    background: transparent linear-gradient(43deg, #848484 45%, #0025FF 100%) 0% 0% no-repeat padding-box;
+}
+.grupo-footer {
+    padding: 67px 72px 60px 0;
+    border-right: 1px solid #2e2e2e;
+}
+.endereco-footer {
+    padding: 75px 42px 64px 42px;
+    border-right: 1px solid #2e2e2e;
+}
+.central-footer {
+    padding: 73px 0 60px 46px; 
+}
+.rotativo {
+    animation: rotation 40s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1699px) {
+    .img-topo {
+        top: 175px;
+        right: 200px;
+        max-width: 600px;
+    }
+    .tit-topo {
+        top: 285px;
+        left: 300px;
+    }
+    .experiencia-titulo {
+        top: 120px;
+    }
+    .bloco-conteudos {
+        width: calc(20% - 45px);
+    }
+    .investimento-img {
+        right: -123px;
+        bottom: 63px;
+    }
+    .grupo-footer {
+        padding: 47px 72px 40px 0;
+    }
+    .endereco-footer {
+        padding: 55px 42px 44px 42px;
+    }
+    .central-footer {
+        padding: 53px 0 40px 46px;
+    }
+    .titulo-divisoria {
+        font-size: 210px;
+        line-height: 185px;
+    }
+    .divisoria-esquerda {
+        top: -30px;
+    }
+    .divisoria-direita {
+        top: -140px;
+    }
+    .certificacao {
+        top: -50px;
+        left: 320px;
+        max-width: 180px;
+    }
+    .divisoria-certificacao {
+        top: -120px;
+    }
+}
+@media screen and (max-width: 1419px) {
+    .tit-topo {
+        top: 225px;
+    }
+    .img-topo {
+        top: 125px;
+        right: 210px;
+        max-width: 500px;
+    }
+    .list-blue {
+        list-style-image: url("../img/ponto_azul_menor.svg");
+        padding-left: 5px;
+        margin-left: 26px;
+    }
+    .list-blue li {
+        padding-left: 3px;
+    }
+    .investimento-img {
+        right: -80px;
+        bottom: 183px;
+    }
+    .plano-obs-block {
+        padding: 25px;
+        margin-left: 70px;
+    }
+    .grupo-footer {
+        padding: 45px 25px 35px 0;
+    }
+    .central-footer {
+        padding: 35px 0 35px 25px;
+    }
+    .endereco-footer {
+        padding: 35px 25px;
+    }
+    .titulo-divisoria {
+        font-size: 170px;
+        line-height: 150px;
+    }
+    .divisoria-esquerda {
+        top: -35px;
+    }
+    .divisoria-direita {
+        top: -80px;
+    }
+    .certificacao {
+        top: -30px;
+        left: 250px;
+        max-width: 150px;
+    }
+    .divisoria-certificacao {
+        top: -85px;
+    }
+}
+@media screen and (max-width: 1289px) {
+    .tit-topo {
+        top: 195px;
+        left: 220px;
+    }
+    .img-topo {
+        top: 105px;
+        right: 170px;
+        max-width: 450px;
+    }
+    .experiencia-titulo {
+        top: 90px;
+    }
+    .bloco-conteudos {
+        width: 30%;
+    }
+    .investimento-img {
+        right: -70px;
+        bottom: 45px;
+    }
+    .plano-block {
+        margin-top: 75px;
+        padding: 74px 0 130px 45px;
+    }
+    .certificacao {
+        top: 0px;
+        max-width: 120px;
+    }
+    .absolute-center-x {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 1100px) {
+    .img-topo {
+        top: 105px;
+        right: 60px;
+        max-width: 445px;
+    }
+    .tit-topo {
+        left: 100px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .tit-topo {
+        top: 92px;
+        left: 50px;
+    }
+    .img-topo {
+        top: 144px;
+        right: 50px;
+        max-width: 415px;
+    }
+    .continuada {
+        top: -55px;
+    }
+    .plano-block {
+        margin-top: 75px;
+        padding: 40px 0 110px 35px;
+    }
+    .plano-obs-block {
+        padding: 20px;
+        margin-left: 45px;
+    }
+    .list-blue {
+        margin-bottom: 20px;
+    }
+    .investimento-img {
+        right: 10px;
+        bottom: auto;
+        top: 0px;
+    }
+    .grupo-footer, .central-footer, .endereco-footer {
+        padding: 25px 10px;
+        border-right: none;
+        border-bottom: 1px solid #2e2e2e;
+    }
+    .titulo-divisoria {
+        font-size: 125px;
+        line-height: 130px;
+    }
+    .divisoria-esquerda {
+        top: -25px;
+    }
+    .divisoria-direita {
+        top: -60px;
+    }
+    .certificacao {
+        max-width: 95px;
+        left: 195px;
+    }
+    .divisoria-certificacao {
+        top: -75px;
+    }
+}
+@media screen and (max-width: 699px) {
+    .continuada {
+        top: -53px;
+    }
+    .bloco-conteudos {
+        width: 47%;
+    }
+    .plano-block {
+        margin-top: 45px;
+        padding: 25px 0 100px 30px;
+    }
+    .titulo-divisoria {
+        font-size: 105px;
+        line-height: 100px;
+    }
+    .divisoria-esquerda {
+        top: -10px;
+    }
+    .divisoria-certificacao {
+        top: -85px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .img-topo {
+        max-width: 325px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .continuada {
+        top: -46px;
+    }
+    .bloco-conteudos {
+        width: 100%;
+    }
+    .grupo-footer, .central-footer, .endereco-footer {
+        padding: 20px 10px;
+    }
+    .titulo-divisoria {
+        font-size: 71px;
+        line-height: 73px;
+    }
+    .divisoria-esquerda {
+        top: 0;
+    }
+    .divisoria-certificacao {
+        top: -60px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .img-topo {
+        max-width: 225px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .plano-block {
+        padding: 25px 0 135px 30px;
+    }
+}
+@media screen and (max-width: 345px) {
+    .img-topo {
+        max-width: 210px;
+    }
+}
