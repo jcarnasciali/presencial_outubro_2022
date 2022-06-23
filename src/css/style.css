@@ -3,7 +3,7 @@
     right: 295px;
 }
 .tit-topo {
-    top: 304px;
+    top: 284px;
     left: 361px;
 }
 .experiencia-titulo {
@@ -47,7 +47,7 @@
     left: 400px
 }
 .bloco-conteudos {
-    width: calc(20% - 52px);
+    width: calc(25% - 52px);
 }
 .plano-block {
     margin-top: 84px;
@@ -65,7 +65,7 @@
     background: transparent linear-gradient(0deg, #535353 0%, #272727 90%) 0% 0% no-repeat padding-box
 }
 .pagamento {
-    background: transparent linear-gradient(43deg, #848484 45%, #0025FF 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(43deg, #848484 45%, #ff5b3b 100%) 0% 0% no-repeat padding-box
 }
 .grupo-footer {
     padding: 67px 72px 60px 0;
@@ -100,14 +100,14 @@
         max-width: 600px;
     }
     .tit-topo {
-        top: 285px;
+        top: 275px;
         left: 300px;
     }
     .experiencia-titulo {
         top: 120px;
     }
     .bloco-conteudos {
-        width: calc(20% - 45px);
+        width: calc(25% - 45px);
     }
     .investimento-img {
         right: -123px;
@@ -143,7 +143,7 @@
 }
 @media screen and (max-width: 1419px) {
     .tit-topo {
-        top: 225px;
+        top: 205px;
     }
     .img-topo {
         top: 125px;
@@ -196,7 +196,7 @@
 }
 @media screen and (max-width: 1289px) {
     .tit-topo {
-        top: 195px;
+        top: 185px;
         left: 220px;
     }
     .img-topo {
@@ -239,7 +239,7 @@
 }
 @media screen and (max-width: 999px) {
     .tit-topo {
-        top: 92px;
+        top: 105px;
         left: 50px;
     }
     .img-topo {

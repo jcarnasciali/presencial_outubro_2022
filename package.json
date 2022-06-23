@@ -4,7 +4,7 @@
   "description": "Curso Presencial da JML - 2022",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "repository": {
     "type": "git",

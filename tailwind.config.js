@@ -18,8 +18,8 @@ module.exports = {
         'local': 'url("../img/bg_local_do_evento.jpg")',
       },
       colors: {
-        'jml-text-blue': '#3E5FFF',
-        'jml-blue': '#0025FF',
+        'jml-text-coral': '#fd755a',
+        'jml-coral': '#ff5b3b',
         'jml-gray': '#3A3A3A',
         'jml-light-gray': '#535353',
         'jml-menu': '#D2CEDB',
